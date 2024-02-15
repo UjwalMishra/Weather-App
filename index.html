@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Weather</h1>
+
+        <div class="container">
+
+            <div class="weather-container">
+
+                <!-- search wheather container  -->
+                <form class="form-container" data-searchForm>
+                    <input type="text" search-btn class="inputvalue" placeholder="Search your city here...">
+                    <button class="btn" class="search-btn">
+                        <img src="./img/searchicon.jpg" width="60" height="60" loading="lazy">
+                    </button>
+                </form>
+
+                <!-- show weather info  -->
+                <div class="user-info-container">
+                    <div class="weatherinfo">
+
+                        <div class="tempAndOther">
+                            <!-- tempearture  -->
+                            <p class="temperatureInfo" data-temp></p>
+                            <div class="descAndIcon">
+                                <!-- weather description  -->
+                                <p data-weatherDesc></p>
+                                <!-- weather icon  -->
+                                <img data-weatherIcon>
+                            </div>
+                        </div>
+
+                        <!-- city name  -->
+                        <div class="city-name">
+                            <p data-cityName></p>
+                        </div>
+                    </div>
+                    <!-- 3-cards  -->
+                    <div class="parameter-container">
+                        <!-- card-1  -->
+                        <div class="parameter card">
+                            <img src="./img/windspeed.jpg" class="windspeed" width="80px">
+                            <p>Wind Speed</p>
+                            <p data-windspeed></p>
+                        </div>
+                        <!-- card-2  -->
+                        <div class="parameter card">
+                            <img src="./img/Humidity-icon.png" width="80px">
+                            <p>Humidity</p>
+                            <p data-humidity></p>
+                        </div>
+                        <!-- card-3  -->
+                        <div class="parameter card">
+                            <img src="./img/clouds.png" width="80px">
+                            <p>Clouds</p>
+                            <p data-cloud></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
