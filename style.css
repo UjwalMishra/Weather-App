@@ -59,6 +59,9 @@ body {
   font-size: 1.25rem;
   padding: 1rem;
 }
+.imgWidth {
+  width: 80px;
+}
 
 .windspeed {
   mix-blend-mode: multiply;
@@ -192,6 +195,9 @@ body {
   .card {
     font-size: 1.1rem;
   }
+  .imgWidth {
+    width: 60px;
+  }
 
   .temperatureInfo {
     font-size: 5rem;
@@ -228,6 +234,7 @@ body {
   }
 
   .parameter-container {
+    width: 80%;
     display: flex;
     flex-direction: row;
     /* gap: 1.5rem; */
@@ -238,7 +245,9 @@ body {
     padding: 0.75rem;
     width: 80%;
   }
-
+  .imgWidth {
+    width: 50px;
+  }
   .temperatureInfo {
     font-size: 3.5rem;
   }
